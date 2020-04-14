@@ -1,0 +1,9 @@
+<h1 style="text-align:center">Important Links</h1>
+<div data-sly-use.impLink="com.ttn.core.models.ImportantLinkWCM">
+    <ul data-sly-list="${impLink.getImpLink}">
+        <li>
+            <a data-sly-test='${item["openTab"]=="new"}' href='${item["pagelink"]}' target="_blank">${item["title"]}</a>
+            <a data-sly-test='${item["openTab"]=="same"}' href='${item["pagelink"]}' >${item["title"]}</a>
+        </li>
+    </ul>
+</div>
